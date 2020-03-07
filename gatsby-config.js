@@ -3,8 +3,8 @@ if (process.env.ENVIROMENT !== 'production') {
 }
 
 const contentfulConfig = {
-  spaceId: process.env.SPACE_ID,
-  accessToken: process.env.ACCESS_TOKEN,
+  spaceId: '260mtng3chl8',
+  accessToken: 'm2Vcwnh2BLDcBmgM_i3Lo9qXzWAyy41EFnW9pra5yaE',
 }
 
 module.exports = {
@@ -23,6 +23,21 @@ module.exports = {
         theme_color: '#663399',
         display: 'minimal-ui',
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        // CommonMark mode (default: true)
+        commonmark: true,
+        // Footnotes mode (default: true)
+        footnotes: true,
+        // Pedantic mode (default: true)
+        pedantic: true,
+        // GitHub Flavored Markdown mode (default: true)
+        gfm: true,
+        // Plugins configs
+        plugins: [],
       },
     },
     'gatsby-plugin-offline',
